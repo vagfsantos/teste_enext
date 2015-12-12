@@ -1,1 +1,8 @@
-@import "components/reset";
+@import "components/configuracoes/variaveis";
+@import "components/configuracoes/mixins_extend";
+@import "components/configuracoes/reset";
+@import "components/configuracoes/fonts";
+
+
+@import "components/layout/grid";
+@import "components/layout/header";

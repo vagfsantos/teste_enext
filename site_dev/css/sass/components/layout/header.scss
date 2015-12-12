@@ -1,0 +1,35 @@
+#cabecalho{
+	
+	.logo{
+		margin: 30px  35px 40px 25px;
+	}
+
+	// Formulário de buscar produtos
+	.busca{
+		margin-right: 100px;
+		top: -25px;
+    	position: relative;
+	}
+	form{
+		width:100%;
+		max-width: 282px;
+		height: 40px;
+		position: relative;
+
+		input{
+			width: 100%;
+			border: 1px solid $cor-escura;
+			font-size: .8em;
+			padding: 10px 10px 10px 60px;
+			@include bordaRedonda(10px);
+		}
+
+		button{
+			background: transparent;
+			position: absolute;
+			top: 0;
+			height: 45px;
+    		width: 45px;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+%font-padrao {font-family: 'Droid Sans', sans-serif;}
+%font-apoio {font-family: 'Oswald', sans-serif;}
+
+body{
+	font-size: 100%;
+	@extend %font-padrao;
+}
