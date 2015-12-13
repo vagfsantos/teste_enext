@@ -12,10 +12,14 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
+  font-size: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -379,7 +383,7 @@ body {
   font-family: 'Droid Sans', sans-serif; }
 
 body {
-  font-size: 150%; }
+  font-size: 100%; }
 
 .container {
   width: 100%;
@@ -393,32 +397,111 @@ body {
 .inline {
   display: inline-block; }
 
-#cabecalho .logo {
-  margin: 30px  35px 40px 25px; }
-#cabecalho .busca {
-  margin-right: 100px;
-  top: -25px;
-  position: relative; }
-#cabecalho form {
-  width: 100%;
-  max-width: 282px;
-  height: 40px;
-  position: relative; }
-  #cabecalho form input {
+#cabecalho {
+  padding: 30px; }
+  #cabecalho .btn_mob {
+    width: 45px;
+    padding: 10px;
+    background: #523468;
+    float: left;
+    margin-right: 45px; }
+    @media all and (min-width: 800px) {
+      #cabecalho .btn_mob {
+        display: none; } }
+  #cabecalho .logo {
+    width: 160px;
+    float: left; }
+    @media all and (min-width: 420px) {
+      #cabecalho .logo {
+        width: 248px;
+        height: 58px;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0; } }
+    @media all and (min-width: 800px) {
+      #cabecalho .logo {
+        width: 100%;
+        max-width: 248px;
+        position: initial; } }
+  #cabecalho .busca {
     width: 100%;
-    border: 1px solid #222222;
-    font-size: .8em;
-    padding: 10px 10px 10px 60px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -moz-border-radius: 10px; }
-  #cabecalho form button {
-    background: transparent;
-    position: absolute;
-    top: 0;
-    height: 45px;
-    width: 45px; }
+    display: none; }
+    @media all and (min-width: 800px) {
+      #cabecalho .busca {
+        margin-left: 1%;
+        position: relative;
+        max-width: 200px;
+        height: 40px;
+        float: left;
+        display: block;
+        position: relative; }
+        #cabecalho .busca form {
+          width: 100%;
+          max-width: 282px;
+          height: 40px;
+          position: relative; }
+          #cabecalho .busca form input {
+            width: 100%;
+            border: 1px solid #222222;
+            font-size: .8em;
+            padding: 10px 10px 10px 60px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            -moz-border-radius: 10px; }
+          #cabecalho .busca form button {
+            background: transparent;
+            position: absolute;
+            top: 0;
+            height: 45px;
+            width: 45px; } }
+    @media all and (min-width: 920px) {
+      #cabecalho .busca {
+        margin-left: 10%; } }
+  #cabecalho .info_carrinho {
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: -10px; }
+    @media all and (min-width: 800px) {
+      #cabecalho .info_carrinho {
+        width: 100%;
+        max-width: 270px; }
+        #cabecalho .info_carrinho .destaque {
+          font-size: 1.3em;
+          margin-right: 30px; }
+        #cabecalho .info_carrinho .sacola {
+          position: relative;
+          top: -15px;
+          margin-left: 20px;
+          color: #b3b3b3; }
+        #cabecalho .info_carrinho .qtd_itens {
+          color: #d6391e;
+          font-weight: bold; } }
+    #cabecalho .info_carrinho .qtd_itens_mobile {
+      width: 25px;
+      height: 25px;
+      padding: 3px 0px 0px 8px;
+      color: #fff;
+      background: #d6391e;
+      position: absolute;
+      right: 10px;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      -moz-border-radius: 100%; }
+      @media all and (min-width: 800px) {
+        #cabecalho .info_carrinho .qtd_itens_mobile {
+          display: none; } }
+    #cabecalho .info_carrinho p {
+      display: none; }
+      @media all and (min-width: 800px) {
+        #cabecalho .info_carrinho p {
+          display: inline-block;
+          color: #d6391e; } }
 
 /*# sourceMappingURL=style.css.map */

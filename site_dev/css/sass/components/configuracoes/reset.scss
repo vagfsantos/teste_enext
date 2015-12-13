@@ -5,10 +5,15 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
+  font-size: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
 }
 
 

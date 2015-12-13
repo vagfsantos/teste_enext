@@ -1,3 +1,13 @@
+// Breakpoints de responsividade
+$break-mobile: 'all and (min-width:420px)';
+$break-tablet: 'all and (min-width: 650px)';
+$break-800: 'all and (min-width: 800px)';
+$break-notebook: 'all and (min-width: 920px)';
+$break-desktop: 'all and (min-width:1042px)';
+
+
+
+// cores do layout
 $cor-primaria: #d6391e;
 $cor-secundaria: #523468;
 $cor-escura: #222222;

@@ -1,35 +1,134 @@
 #cabecalho{
+	padding: 30px;
 	
+	.btn_mob{
+		width: 45px;
+		padding: 10px;
+		background: $cor-secundaria;
+		float: left;
+		margin-right: 45px;
+		@media #{$break-800}{
+			display: none;
+		}
+	}
+
 	.logo{
-		margin: 30px  35px 40px 25px;
+		width:160px;
+		float: left;
+
+		@media #{$break-mobile}{
+			width: 248px;
+			height: 58px;
+			position: absolute;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+
+		@media #{$break-800}{
+			width: 100%;
+			max-width: 248px;
+			position: initial;
+		}
 	}
 
 	// Formulário de buscar produtos
 	.busca{
-		margin-right: 100px;
-		top: -25px;
-    	position: relative;
-	}
-	form{
-		width:100%;
-		max-width: 282px;
-		height: 40px;
+		width: 100%;
+		display: none;
+
+		@media #{$break-800}{
+			margin-left: 1%;
+	    	position: relative;
+	    	max-width: 200px;
+			height: 40px;
+			float: left;
+			display: block;
+			position: relative;
+
+			form{
+				width:100%;
+				max-width: 282px;
+				height: 40px;
+				position: relative;
+
+				input{
+					width: 100%;
+					border: 1px solid $cor-escura;
+					font-size: .8em;
+					padding: 10px 10px 10px 60px;
+					@include bordaRedonda(10px);
+				}
+
+				button{
+					background: transparent;
+					position: absolute;
+					top: 0;
+					height: 45px;
+		    		width: 45px;
+				}
+			}// fim form
+		}// fim @media
+
+		@media #{$break-notebook}{
+			margin-left: 10%;	
+		}
+
+	} // fim busca
+
+	.info_carrinho{
+		width: 50px;
+		height: 50px;
+		float: right;
 		position: relative;
+		top: -10px;
 
-		input{
+		@media #{$break-800}{
 			width: 100%;
-			border: 1px solid $cor-escura;
-			font-size: .8em;
-			padding: 10px 10px 10px 60px;
-			@include bordaRedonda(10px);
+			max-width: 270px;
+
+			.destaque{
+				font-size: 1.3em;
+				margin-right: 30px;
+			}
+
+			.sacola{
+				position: relative;
+				top: -15px;
+	   	 		margin-left: 20px;
+	   	 		color: darken($cor-neutra, 20%);
+			}
+
+			.qtd_itens{
+				color:$cor-primaria;
+				font-weight: bold;
+			}
+		}// fim @media
+		
+
+		.qtd_itens_mobile{
+			width: 25px;
+		    height: 25px;
+		    padding: 3px 0px 0px 8px;
+    		color: $cor-clara;
+			background: $cor-primaria;
+			position: absolute;
+			right: 10px;
+			@include bordaRedonda(100%);
+			
+			@media #{$break-800}{
+				display: none;
+			}
 		}
 
-		button{
-			background: transparent;
-			position: absolute;
-			top: 0;
-			height: 45px;
-    		width: 45px;
+		p{
+			display: none;
+			@media #{$break-800}{
+				display: inline-block;
+				color: $cor-primaria;
+			}
 		}
+
 	}
-}
+
+}// fim #cabecalho
