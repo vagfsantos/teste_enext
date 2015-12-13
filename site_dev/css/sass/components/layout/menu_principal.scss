@@ -1,0 +1,128 @@
+.container-fluido.menu{
+	background: $cor-secundaria;
+	position: fixed;
+	left: -100%;
+    top: 0;
+    width: 40%;
+    z-index: 5;
+    height: 100%;
+
+	@media #{$break-800}{
+		width: 100%;
+		height: initial;
+		position: relative;
+		left: 0;
+	}
+}
+
+#menu_principal{
+	padding: 20px 50px;
+	position: relative;
+	width: 44%;
+	height: 100%;
+	margin: 0;
+
+	@media #{$break-800}{
+		width: 100%;
+		height: 70px;
+		margin: 0 auto;
+	}
+	
+	ul{
+		position: relative;
+    	top: 5px;
+	
+		li{
+			position: relative;
+			margin-bottom: 10px;
+			width: 100%;
+			padding: 10px;
+
+			@media #{$break-800}{
+				display: inline-block;
+				width: initial;
+				margin-bottom: 0;
+				padding: 0;
+			}
+			
+			// links do menu
+			a{
+				color: $cor-clara;
+				padding: 17px 25px;
+				@include bordaRedonda(5px);
+				@include transicao(.4s, ease-out);
+				position: relative;
+				
+				&:hover{
+					background: darken($cor-secundaria, 10%);
+				}
+			}
+		}// fim li
+	}// fim ul
+	
+	// setas dropdown
+	.seta_menu{
+		width: 10px;
+	    height: 10px;
+	    position: absolute;
+	    float: right;
+	    background: url('../img/seta_drop.png') no-repeat center center;
+	    top: 0;
+	    right: 10px;
+	    bottom: 0;
+	    margin: auto 0;
+	}
+}// fim #menu_principal
+
+
+#login{
+	width: 125%;
+	padding: 20px;
+	border: 2px solid darken($cor-secundaria, 5%);
+	@include bordaRedonda(5px);
+	color: lighten($cor-secundaria, 60%);
+	position: absolute;
+	margin-top: 20px;
+
+	@media #{$break-800}{
+		width: auto;
+		padding: 0;
+		border: none;
+		margin-top: 0;
+		right: 5%;
+		top: -30px;
+	}
+
+	@media #{$break-notebook}{
+	    top: 23px;
+	    color: lighten($cor-secundaria, 60%);
+	}
+	
+	a{
+		color: $cor-clara;
+		text-shadow: 0 0 0px $cor-clara;
+		@include transicao(.2s, ease-in);
+
+		@media #{$break-800}{
+			color: $cor-secundaria;
+		}
+
+		@media #{$break-notebook}{
+			color: $cor-clara;
+		}
+
+		&:hover{
+			text-shadow: 0 0 8px $cor-clara;
+		}
+	}
+}
+
+
+#fechar_menu{
+	width: 100%;
+	height: 100%;
+	top:0;
+	position: fixed;
+	background: rgba($cor-escura, .8);
+	display: none;
+}

@@ -1,0 +1,72 @@
+.rodape{
+	background: $cor-neutra;
+	float: left;
+	padding: 50px 0;
+}
+
+#menu_rodape{
+	width: 50%;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+
+	nav {
+		width:100%;
+		position: relative;
+		margin-bottom: 1em;
+
+		ul{
+			width: 70%;
+
+			li{
+				display: inline-block;
+			}
+
+			a{
+				padding: 10px;
+				color: $cor-primaria;
+				
+				&:hover{
+					color: $cor-secundaria;
+				}
+			}
+		}
+	}
+
+}
+
+#newsletter{
+	width: 50%;
+	float: left;
+	padding: 20px;
+	background: $cor-clara;
+	@include bordaRedonda(10px);
+
+	p{
+		line-height: 26px;
+		font-size: 1.2em;
+		&:last-child{
+			font-size: 1em;
+		}
+	}
+
+	form{
+		margin-top: 1em;
+
+		input{
+			border: 1px solid $cor-escura;
+			padding: 10px;
+			@include bordaRedonda(5px);
+			width: 70%;
+		}
+
+		button{
+			padding: 10px;
+			background: $cor-primaria;
+			color: $cor-clara;
+			text-transform: uppercase;
+			@include bordaRedonda(5px);
+		}
+	}
+}

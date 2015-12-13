@@ -382,6 +382,9 @@ th {
 body {
   font-family: 'Droid Sans', sans-serif; }
 
+#produtos figure figcaption {
+  font-family: 'Oswald', sans-serif; }
+
 body {
   font-size: 100%; }
 
@@ -398,7 +401,8 @@ body {
   display: inline-block; }
 
 #cabecalho {
-  padding: 30px; }
+  padding: 30px;
+  height: 120px; }
   #cabecalho .btn_mob {
     width: 45px;
     padding: 10px;
@@ -456,7 +460,7 @@ body {
             position: absolute;
             top: 0;
             height: 45px;
-            width: 45px; } }
+            width: 40px; } }
     @media all and (min-width: 920px) {
       #cabecalho .busca {
         margin-left: 10%; } }
@@ -503,5 +507,217 @@ body {
         #cabecalho .info_carrinho p {
           display: inline-block;
           color: #d6391e; } }
+
+.container-fluido.menu {
+  background: #523468;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 40%;
+  z-index: 5;
+  height: 100%; }
+  @media all and (min-width: 800px) {
+    .container-fluido.menu {
+      width: 100%;
+      height: initial;
+      position: relative;
+      left: 0; } }
+
+#menu_principal {
+  padding: 20px 50px;
+  position: relative;
+  width: 44%;
+  height: 100%;
+  margin: 0; }
+  @media all and (min-width: 800px) {
+    #menu_principal {
+      width: 100%;
+      height: 70px;
+      margin: 0 auto; } }
+  #menu_principal ul {
+    position: relative;
+    top: 5px; }
+    #menu_principal ul li {
+      position: relative;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 10px; }
+      @media all and (min-width: 800px) {
+        #menu_principal ul li {
+          display: inline-block;
+          width: initial;
+          margin-bottom: 0;
+          padding: 0; } }
+      #menu_principal ul li a {
+        color: #fff;
+        padding: 17px 25px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+        transition: 0.4s ease-out;
+        -webkit-transition: 0.4s ease-out;
+        -ms-transition: 0.4s ease-out;
+        -o-transition: 0.4s ease-out;
+        -moz-transition: 0.4s ease-out;
+        position: relative; }
+        #menu_principal ul li a:hover {
+          background: #372346; }
+  #menu_principal .seta_menu {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    float: right;
+    background: url("../img/seta_drop.png") no-repeat center center;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto 0; }
+
+#login {
+  width: 125%;
+  padding: 20px;
+  border: 2px solid #452c57;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #e8dfef;
+  position: absolute;
+  margin-top: 20px; }
+  @media all and (min-width: 800px) {
+    #login {
+      width: auto;
+      padding: 0;
+      border: none;
+      margin-top: 0;
+      right: 5%;
+      top: -30px; } }
+  @media all and (min-width: 920px) {
+    #login {
+      top: 23px;
+      color: #e8dfef; } }
+  #login a {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in; }
+    @media all and (min-width: 800px) {
+      #login a {
+        color: #523468; } }
+    @media all and (min-width: 920px) {
+      #login a {
+        color: #fff; } }
+    #login a:hover {
+      text-shadow: 0 0 8px #fff; }
+
+#fechar_menu {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  background: rgba(34, 34, 34, 0.8);
+  display: none; }
+
+main.vitrine {
+  padding: 55px 45px; }
+
+#produtos {
+  width: 100%;
+  position: relative; }
+  #produtos figure {
+    width: 100%;
+    float: left;
+    margin: 2em 0;
+    cursor: pointer; }
+    @media all and (min-width: 420px) {
+      #produtos figure {
+        width: 50%; } }
+    @media all and (min-width: 800px) {
+      #produtos figure {
+        width: 33.3%; }
+        #produtos figure img {
+          transition: 0.4s ease;
+          -webkit-transition: 0.4s ease;
+          -ms-transition: 0.4s ease;
+          -o-transition: 0.4s ease;
+          -moz-transition: 0.4s ease; }
+        #produtos figure:hover figcaption p {
+          color: #523468; }
+        #produtos figure:hover img {
+          transform: translateY(-30px); } }
+    #produtos figure figcaption {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em; }
+      #produtos figure figcaption .preco {
+        color: #d6391e; }
+
+.rodape {
+  background: #e6e6e6;
+  float: left;
+  padding: 50px 0; }
+
+#menu_rodape {
+  width: 50%;
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative; }
+  #menu_rodape nav {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1em; }
+    #menu_rodape nav ul {
+      width: 70%; }
+      #menu_rodape nav ul li {
+        display: inline-block; }
+      #menu_rodape nav ul a {
+        padding: 10px;
+        color: #d6391e; }
+        #menu_rodape nav ul a:hover {
+          color: #523468; }
+
+#newsletter {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -moz-border-radius: 10px; }
+  #newsletter p {
+    line-height: 26px;
+    font-size: 1.2em; }
+    #newsletter p:last-child {
+      font-size: 1em; }
+  #newsletter form {
+    margin-top: 1em; }
+    #newsletter form input {
+      border: 1px solid #222222;
+      padding: 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      -moz-border-radius: 5px;
+      width: 70%; }
+    #newsletter form button {
+      padding: 10px;
+      background: #d6391e;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      -moz-border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */

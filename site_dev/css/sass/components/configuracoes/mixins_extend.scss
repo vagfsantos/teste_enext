@@ -31,3 +31,12 @@
 	-o-border-radius: $raio;
 	-moz-border-radius: $raio;
 }
+
+// transicoes animadas
+@mixin transicao($secundos, $modo){
+	transition: $secundos $modo;
+	-webkit-transition: $secundos $modo;
+	-ms-transition: $secundos $modo;
+	-o-transition: $secundos $modo;
+	-moz-transition: $secundos $modo;
+}
