@@ -659,47 +659,95 @@ main.vitrine {
         color: #d6391e; }
 
 .rodape {
-  background: #e6e6e6;
-  float: left;
-  padding: 50px 0; }
+  background: #fff;
+  float: left; }
+  @media all and (min-width: 800px) {
+    .rodape {
+      background: #e6e6e6;
+      padding: 50px 0; } }
 
 #menu_rodape {
-  width: 50%;
-  float: left;
-  text-transform: uppercase;
-  font-weight: bold;
-  position: relative; }
-  #menu_rodape nav {
-    width: 100%;
-    position: relative;
-    margin-bottom: 1em; }
-    #menu_rodape nav ul {
-      width: 70%; }
-      #menu_rodape nav ul li {
-        display: inline-block; }
-      #menu_rodape nav ul a {
-        padding: 10px;
-        color: #d6391e; }
-        #menu_rodape nav ul a:hover {
-          color: #523468; }
+  display: none; }
+  @media all and (min-width: 800px) {
+    #menu_rodape {
+      width: 50%;
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: relative;
+      font-size: 1.5em;
+      display: block; }
+      #menu_rodape nav {
+        width: 100%;
+        position: relative;
+        margin-bottom: 1em; }
+        #menu_rodape nav ul {
+          width: 90%; }
+          #menu_rodape nav ul li {
+            display: inline-block; }
+          #menu_rodape nav ul a {
+            padding: 10px;
+            color: #d6391e; }
+            #menu_rodape nav ul a:hover {
+              color: #523468; }
+      #menu_rodape .menu_redes li {
+        position: relative;
+        margin-right: 35px;
+        transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        -moz-transition: 0.2s ease; }
+        #menu_rodape .menu_redes li:hover {
+          transform: translateY(-5px); }
+      #menu_rodape .menu_redes li a span {
+        width: 35px;
+        height: 35px;
+        position: absolute; }
+      #menu_rodape .menu_redes span {
+        background-image: url("../img/sprite_redes.png"); }
+      #menu_rodape .menu_redes .facebook {
+        background-position: 0px 0px; }
+      #menu_rodape .menu_redes .twitter {
+        background-position: -64px 0px; }
+      #menu_rodape .menu_redes .pinterest {
+        background-position: -128px 0px; }
+      #menu_rodape .menu_redes .tumbrl {
+        background-position: -194px 0px; }
+      #menu_rodape .menu_redes .google {
+        background-position: -258px 0px; } }
 
 #newsletter {
-  width: 50%;
-  float: left;
-  padding: 20px;
+  width: 100%;
   background: #fff;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -moz-border-radius: 10px; }
+  padding: 20px; }
   #newsletter p {
-    line-height: 26px;
-    font-size: 1.2em; }
-    #newsletter p:last-child {
-      font-size: 1em; }
+    text-align: center; }
+    #newsletter p:first-child {
+      font-size: 1.2em;
+      font-weight: bold; }
+  @media all and (min-width: 800px) {
+    #newsletter {
+      width: 50%;
+      float: left;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      -moz-border-radius: 10px; }
+      #newsletter p {
+        line-height: 40px;
+        font-size: 1.2em;
+        text-align: left; } }
   #newsletter form {
-    margin-top: 1em; }
+    margin: 1em auto;
+    width: 80%;
+    position: relative;
+    left: 0;
+    right: 0; }
+    @media all and (min-width: 800px) {
+      #newsletter form {
+        margin: 1em 0; } }
     #newsletter form input {
       border: 1px solid #222222;
       padding: 10px;
@@ -708,8 +756,13 @@ main.vitrine {
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
       -moz-border-radius: 5px;
-      width: 70%; }
+      width: 100%;
+      margin-bottom: 1em; }
+      @media all and (min-width: 650px) {
+        #newsletter form input {
+          width: 70%; } }
     #newsletter form button {
+      width: 100%;
       padding: 10px;
       background: #d6391e;
       color: #fff;
@@ -719,5 +772,20 @@ main.vitrine {
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
       -moz-border-radius: 5px; }
+      @media all and (min-width: 650px) {
+        #newsletter form button {
+          width: 25%; } }
+
+.assinatura {
+  color: gray;
+  text-align: center;
+  background: #e6e6e6;
+  padding: 10px 0; }
+  @media all and (min-width: 800px) {
+    .assinatura {
+      background: transparent;
+      padding: 0;
+      line-height: 25px;
+      text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */
