@@ -401,8 +401,11 @@ body {
   display: inline-block; }
 
 #cabecalho {
-  padding: 30px;
-  height: 120px; }
+  height: 120px;
+  padding: 30px 5px; }
+  @media all and (min-width: 650px) {
+    #cabecalho {
+      padding: 30px; } }
   #cabecalho .btn_mob {
     width: 45px;
     padding: 10px;
@@ -414,7 +417,13 @@ body {
         display: none; } }
   #cabecalho .logo {
     width: 160px;
-    float: left; }
+    float: left;
+    left: -35px;
+    position: relative; }
+    @media all and (min-width: 420px) {
+      #cabecalho .logo {
+        left: 0;
+        position: initial; } }
     @media all and (min-width: 420px) {
       #cabecalho .logo {
         width: 248px;
