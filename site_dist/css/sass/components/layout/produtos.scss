@@ -1,0 +1,46 @@
+main.vitrine{
+	padding: 55px 45px;
+}
+
+#produtos{
+	width: 100%;
+	position: relative;
+
+	figure{
+		width: 100%;
+		float: left;
+		margin: 2em 0;
+		cursor: pointer;
+
+		@media #{$break-mobile}{
+			width: 50%;
+		}
+
+		@media #{$break-800}{
+			width: 33.3%;
+			
+			img{
+				@include transicao(.4s, ease);
+			}
+			
+			&:hover figcaption p{
+				color: $cor-secundaria;
+			}
+
+			&:hover img{
+				transform: translateY(-30px);
+			}
+		}
+
+		figcaption{
+			@extend %font-apoio;
+			text-align: center;
+			font-weight: bold;
+			font-size: 1.2em;
+
+			.preco{
+				color: $cor-primaria;
+			}
+		}
+	}
+}

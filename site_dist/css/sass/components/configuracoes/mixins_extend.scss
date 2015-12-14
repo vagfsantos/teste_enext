@@ -1,0 +1,42 @@
+
+// Centraliza elemento na horizontal e vetical
+%centraliza_XY{
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+// Centraliza elemento na horizontal 
+%centraliza_X{
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+// Centraliza elemento na vertical 
+%centraliza_Y{
+	margin: auto 0;
+	top: 0;
+	bottom: 0;
+}
+
+
+// Arredondando bordas
+@mixin bordaRedonda($raio){
+	border-radius: $raio;
+	-webkit-border-radius: $raio;
+	-ms-border-radius: $raio;
+	-o-border-radius: $raio;
+	-moz-border-radius: $raio;
+}
+
+// transicoes animadas
+@mixin transicao($secundos, $modo){
+	transition: $secundos $modo;
+	-webkit-transition: $secundos $modo;
+	-ms-transition: $secundos $modo;
+	-o-transition: $secundos $modo;
+	-moz-transition: $secundos $modo;
+}

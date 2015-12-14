@@ -1,0 +1,15 @@
+.container{
+	width: 100%;
+	max-width: 1042px;
+	position: relative;
+	@extend %centraliza_XY;
+}
+
+.container-fluido{
+	width: 100%;
+	position: relative;
+}
+
+.inline{
+	display: inline-block;
+}

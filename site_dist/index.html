@@ -15,56 +15,174 @@
 
 
 	<body>
-		Hello world
-		<header class="container">
-			<section>
-				<img src="" alt="">
-
-				<form action="">
-					<input type="text">
-				</form>
-
-				<div>
-					
+		<header class="container-fluido">
+			<!-- CABEÇALHO -->
+			<section id="cabecalho" class="container">
+				<button id="botao_m" class="btn_mob"><img src="img/btn-mob.png" alt="Menu"></button>
+				<!-- logo -->
+				<div class="logo">
+					<img src="img/logo.jpg" alt="Logo Merlin's Potions">
+				</div>
+				
+				<!-- barra e busca -->
+				<div class="busca">
+					<form action="#" method="post">
+						<input type="text" placeholder="Search our stock">
+						<button type="submit"><img src="img/buscar.jpg" alt="Buscar produto"></button>
+					</form>
+				</div>
+				
+				<!-- carrinho de compras -->
+				<div class="info_carrinho">
+					<p><span class="destaque">Free Shipping</span><br/>on oreders over $50</p>
+					<img src="img/carrinho.jpg" alt="Seu carrinho de compras">
+					<p class="sacola">BAG: <span class="qtd_itens">1</span></p>
+					<span class="qtd_itens_mobile">1</span>
 				</div>
 			</section>
+			
+			<!-- MENU PRINCIPAL -->
+			<section id="menu_mobile" class="container-fluido menu">
+				<nav id="menu_principal" class="container">
+					<ul>
+						<li><a href="#">Potions</a> <span class="seta_menu"></span></li>
 
-			<nav>
-				<ul>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-				</ul>
+						<li><a href="#">Ingredients</a> <span class="seta_menu"></span></li>
 
-				<div></div>
-			</nav>
+						<li><a href="#">Books</a> <span class="seta_menu"></span></li>
+
+						<li><a href="#">Supplies</a> <span class="seta_menu"></span></li>
+
+						<li><a href="#">Charms </a> <span class="seta_menu"></span></li>
+
+						<li><a href="#">Clearance</a> </li>
+					</ul>
+
+					<div id="login">
+						<p><a href="#">Sign In</a> or <a href="#">Sign Up</a></p>
+					</div>
+				</nav>
+			</section>
+			<span id="fechar_menu" class="fechar"></span>
 		</header>
 
-		<main class="container">
-			<h1></h1>
+		<main class="container vitrine">
+			<h1>Potions</h1>
+			<!-- PRODUTOS DA LOJA -->
+			<section id="produtos">
+				<!-- produto -->
+				<figure data-layer="1" class="thumb">
+					<img src="img/produtos/aging-potion.png" alt="aging potion">
+					<figcaption>
+						<p>Agin Potion <span class="preco">$29.99</span></p>
+					</figcaption>
+				</figure>
 
-			<section>
-				<figure>
-					<img src="" alt="">
-					<figcaption></figcaption>
+				<!-- produto -->
+				<figure data-layer="2" class="thumb">
+					<img src="img/produtos/bulgeye-potion.png" alt="bulgeye potion">
+					<figcaption>
+						<p>Bulgeye Potion <span class="preco">$19.99</span></p>
+					</figcaption>
+				</figure>
+
+				<!-- produto -->
+				<figure data-layer="3" class="thumb">
+					<img src="img/produtos/dragon-tonic.png" alt="dragon tonic">
+					<figcaption>
+						<p>Dragon Tonic <span class="preco">$64.99</span></p>
+					</figcaption>
+				</figure>
+
+				<!-- produto -->
+				<figure data-layer="4" class="thumb">
+					<img src="img/produtos/love-potion.png" alt="love potion">
+					<figcaption>
+						<p>Love Potion <span class="preco">$29.99</span></p>
+					</figcaption>
+				</figure>
+
+				<!-- produto -->
+				<figure data-layer="5" class="thumb">
+					<img src="img/produtos/polyjuice-potion.png" alt="polyjuice potion">
+					<figcaption>
+						<p>Polyjuice Potion <span class="preco">$99.99</span></p>
+					</figcaption>
+				</figure>
+
+				<!-- produto -->
+				<figure data-layer="6" class="thumb">
+					<img src="img/produtos/sleeping-draught.png" alt="sleeping draught">
+					<figcaption>
+						<p>Sleeping Draught <span class="preco">$14.99</span></p>
+					</figcaption>
 				</figure>
 			</section>
+
+			<div id="info_produto">
+				<span class="fechar_info fechar_lightbox"></span>
+				<figure>
+					<div id="img_produto">
+						<img src="img/produtos/sleeping-draught.png">
+					</div>
+					<figcaption id="detalhes_produto">
+						<h3 id="nome"></h3>
+						<h3>Use/Effect</h3>
+						<p id="efeitos"></p>
+						<h3>Ingredients</h3>
+						<ul id="ingredientes">
+							
+						</ul>
+						<h3>Preços</h3>
+						<p id="preco"></p>
+
+						<button>Add to cart</button>
+					</figcaption>
+					<span class="botao_x fechar_lightbox"></span>
+				</figure>
+			</div>
 		</main>
-
-		<footer class="container">
-			<section>
-				<nav></nav>
-				<nav></nav>
-			</section>
-
-			<section>
+		
+		<!-- RODAPE -->
+		<footer class="container-fluido rodape">
+			<div class="container">
+			<!-- Menus -->
+				<section id="menu_rodape">
+					<!-- menu empresa -->
+					<nav class="menu_empresa">
+						<ul>
+							<li><a href="#">Company</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Shipping</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+					</nav>
+					
+					<!-- redes sociais -->
+					<nav class="menu_redes">
+						<ul>
+							<li><a href="#"><span class="facebook"></span></a></li>
+							<li><a href="#"><span class="twitter"></span></a></li>
+							<li><a href="#"><span class="pinterest"></span></a></li>
+							<li><a href="#"><span class="tumbrl"></span></a></li>
+							<li><a href="#"><span class="google"></span></a></li>
+						</ul>
+					</nav>
+				</section>
 				
-			</section>
+				<!-- newsletter -->
+				<section id="newsletter">
+					<p>Sign up for our Newsletter</p>
+					<p>Sign up for our newsletter & get exclusive discounts!</p>
+					<form action="">
+						<input type="text" placeholder="Enter your e-mail">
+						<button type="submit">Submit</button>
+					</form>
+				</section>
 
-			<p></p>
+				<p class="assinatura">2015 Merlin's Potions. All Rights Reserved</p>
+			</div>
 		</footer>
 	
 		<script src="js/main.min.js"></script>

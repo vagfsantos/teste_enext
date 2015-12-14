@@ -20,7 +20,7 @@
 		<header class="container-fluido">
 			<!-- CABEÇALHO -->
 			<section id="cabecalho" class="container">
-				<button class="btn_mob"><img src="img/btn-mob.png" alt="Menu"></button>
+				<button id="botao_m" class="btn_mob"><img src="img/btn-mob.png" alt="Menu"></button>
 				<!-- logo -->
 				<div class="logo">
 					<img src="img/logo.jpg" alt="Logo Merlin's Potions">
@@ -44,7 +44,7 @@
 			</section>
 			
 			<!-- MENU PRINCIPAL -->
-			<section class="container-fluido menu">
+			<section id="menu_mobile" class="container-fluido menu">
 				<nav id="menu_principal" class="container">
 					<ul>
 						<li><a href="#">Potions</a> <span class="seta_menu"></span></li>
@@ -65,7 +65,7 @@
 					</div>
 				</nav>
 			</section>
-			<span id="fechar_menu"></span>
+			<span id="fechar_menu" class="fechar"></span>
 		</header>
 
 		<main class="container vitrine">
@@ -73,7 +73,7 @@
 			<!-- PRODUTOS DA LOJA -->
 			<section id="produtos">
 				<!-- produto -->
-				<figure>
+				<figure data-layer="1" class="thumb">
 					<img src="img/produtos/aging-potion.png" alt="aging potion">
 					<figcaption>
 						<p>Agin Potion <span class="preco">$29.99</span></p>
@@ -81,7 +81,7 @@
 				</figure>
 
 				<!-- produto -->
-				<figure>
+				<figure data-layer="2" class="thumb">
 					<img src="img/produtos/bulgeye-potion.png" alt="bulgeye potion">
 					<figcaption>
 						<p>Bulgeye Potion <span class="preco">$19.99</span></p>
@@ -89,7 +89,7 @@
 				</figure>
 
 				<!-- produto -->
-				<figure>
+				<figure data-layer="3" class="thumb">
 					<img src="img/produtos/dragon-tonic.png" alt="dragon tonic">
 					<figcaption>
 						<p>Dragon Tonic <span class="preco">$64.99</span></p>
@@ -97,7 +97,7 @@
 				</figure>
 
 				<!-- produto -->
-				<figure>
+				<figure data-layer="4" class="thumb">
 					<img src="img/produtos/love-potion.png" alt="love potion">
 					<figcaption>
 						<p>Love Potion <span class="preco">$29.99</span></p>
@@ -105,7 +105,7 @@
 				</figure>
 
 				<!-- produto -->
-				<figure>
+				<figure data-layer="5" class="thumb">
 					<img src="img/produtos/polyjuice-potion.png" alt="polyjuice potion">
 					<figcaption>
 						<p>Polyjuice Potion <span class="preco">$99.99</span></p>
@@ -113,13 +113,36 @@
 				</figure>
 
 				<!-- produto -->
-				<figure>
+				<figure data-layer="6" class="thumb">
 					<img src="img/produtos/sleeping-draught.png" alt="sleeping draught">
 					<figcaption>
 						<p>Sleeping Draught <span class="preco">$14.99</span></p>
 					</figcaption>
 				</figure>
 			</section>
+
+			<div id="info_produto">
+				<span class="fechar_info fechar_lightbox"></span>
+				<figure>
+					<div id="img_produto">
+						<img src="img/produtos/sleeping-draught.png">
+					</div>
+					<figcaption id="detalhes_produto">
+						<h3 id="nome"></h3>
+						<h3>Use/Effect</h3>
+						<p id="efeitos"></p>
+						<h3>Ingredients</h3>
+						<ul id="ingredientes">
+							
+						</ul>
+						<h3>Preços</h3>
+						<p id="preco"></p>
+
+						<button>Add to cart</button>
+					</figcaption>
+					<span class="botao_x fechar_lightbox"></span>
+				</figure>
+			</div>
 		</main>
 		
 		<!-- RODAPE -->
